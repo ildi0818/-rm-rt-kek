@@ -1,0 +1,87 @@
+body{
+    background-color: rgb(220, 220, 220);
+    font-size: 13pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#wrapper {
+    background-color: rgb(192, 192, 255);
+    padding: 20px;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+p {
+    text-align: justify;
+}
+
+.korso {
+    height: 200px;
+    margin-left: 20px;
+    float: right;
+}
+
+.hordo {
+    height: 300px;
+    margin: 0 20px 20px 0;
+    float: left;
+}
+
+img {
+    border: 2px solid  blue;
+}
+
+hr {
+    height: 80%;
+    margin: 30px;
+}
+
+fieldset {
+    width: 250px;
+    margin: 0 auto;
+    padding-left: 100px;
+}
+
+legend {
+    margin-left: -90px;
+}
+
+input[type = "number"] {
+    width: 100px;
+}
+
+input[type = "button"] {
+    width: 140px;
+}
+
+table {
+    margin: 30px auto;
+    text-align: center;
+}
+
+table, tr, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+a {
+    color: blue;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    text-decoration: none;
+}
+
+a:visited {
+    color: darkgreen;
+    text-decoration: none;
+}

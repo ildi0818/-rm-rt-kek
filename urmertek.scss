@@ -1,0 +1,24 @@
+table{
+    @for $i from 1 to 21 {
+        tr:nth-child(#{$i}){
+            td{
+                $szam: 0;
+                @for $j from 1 to 6 {
+                    @if($i % 2 != 0){
+                        $szam: 1;
+                    }
+                    @if($j % 2 == $szam){
+                        &:nth-child(#{$j}){
+                            background-color: grey;
+                        }
+                    }
+                    @else{
+                        &:nth-child(#{$j}){
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

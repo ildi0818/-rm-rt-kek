@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="urmertekek.css">
+    <link rel="stylesheet" href="urmertek.css">
+    <title>Régi magyar űrmértékek</title>
+</head>
+
+<body>
+    <div id="wrapper">
+        <h1>Régi űrmértékek</h1>
+        <img class="korso" src="korsok.jpg" alt="Iccés korsó" title="Iccés korsó">
+        <p>A legkisebb a <strong>meszely</strong>, amely fél iccével volt egyenlő, azaz valamivel több, mint négy deciliter.
+            Ennél kisebb ivóedény nem létezett a kocsmákban... Erről a mértékegységről kapta a nevét az ugyanekkora
+            mérető agyagkorsó.</p>
+        <p>A kétmeszelynyi <strong>icce</strong> nagysága területenként változó: általában 8,5 deci körül volt - a magyar
+            icce egészen pontosan 848 mililiter - de az erdélyi icce ennél kisebb, körülbelül hét deci. Közismert
+            történet a részeges cinkotai kántorról, aki Mátyás királytól azt kérte jutalmul, hogy náluk legyen az icce
+            kétszer akkora, mint máshol. Meg is kapta ezt a királyi kegyet, és csak akkor döbbent meg, amikor a
+            nagyiccéért a kocsmáros kétszer annyi pénzt kér, mint a kisiccéért - mert bizony azt elfelejtette kérni a
+            királytól a feledékeny kántor, hogy a nagyicce ára legyen ugyanannyi, mint a kisiccéé...</p>
+        <img class="hordo" src="goncihordo.jpg" alt="Gönci hordó" title="Gönci hordó">
+        <p>A nagyság szerinti sorban a latin 'jelzett', vagyis pinctu szóból eredő <strong>pint</strong> következik, ami
+            négy meszellyel, vagyis két iccével azonos - tehát körülbelül 1,7 liter.</p>
+        <p>A <strong>köböl</strong> rendkívül változó, területenként 12 litertől akár 42 literig bármekorra lehetett: az
+            eredetileg 'faedényt' jelentő <strong>cseber</strong> pedig ötven vagy száz iccét tartalmazott, attól függően,
+            hogy kiscseberről, vagy nagycseberről volt szó.</p>
+        <p>Zsong már a fejük? Pedig még nem volt szó <strong>a mérő, a kanta, az átalag, a fertály, a szapu és a
+                kupa</strong> jelentéséről, de az <strong>akó</strong> semmiképpen nem maradhat ki, hiszen ezzel mérték a
+            hordók nagyságát. Országoktól, sőt városoktól és történelmi koroktól függően 50 és 54 liter közötti
+            mennyiség lehetett egy akó, hiszen csak azt határozták meg, hogy egy magyar akó 64 iccel, azaz 32 pint
+            legyen - de bizony területenként a pintnyi bor mennyisége is eltérő lehetett. Mindenesetre Hegyalján a száz
+            liternél, vagy egy hektónál kisebb, ám fél hektónál nagyobb hordókat mai is akós hordónak hívják; de persze
+            a legismertebb tokaji mértékegység a <strong>gönci hordó</strong>, amelybe 160 icce, vagyik 136 liter aszúbor
+            fér el.</p>
+        <hr>
+            <fieldset>
+                <legend>Átváltások</legend>
+                <input type="radio" id="dl" checked>
+                <input type="number" id="deciliter" name="me">
+                <label for="dl">deciliter</label>
+                <br>
+                <input type="radio" id="icce">
+                <input type="number" id="icce" name="me">
+                <label for="icce">magyar icce</label>
+                <br>
+                <input type="radio" id="pint">
+                <input type="number" id="pint" name="me">
+                <label for="pint">pint</label>
+                <br>
+                <button onclick="Szamol()">Számol</button>
+            </fieldset>
+
+        <table>
+            <tbody>
+                <tr>
+                    <td colspan="5"><a href="https://mnl.gov.hu/mnl/ol/urmertek" target="_blank">AZ ŰRMÉRTÉK</a></td>
+                </tr>
+                <tr>
+                    <td>MAGYAR NEVE</td>
+                    <td>LATIN NEVE</td>
+                    <td>NÉMET NEVE</td>
+                    <td>ÁTVÁLTÁSA</td>
+                    <td>ÁTLAGOS ÉRTÉKE<br>MAI MÉRTÉKEGYSÉGBEN</td>
+                </tr>
+                <tr>
+                    <td>akó </b></td>
+                    <td>&nbsp;urna</td>
+                    <td>Eimer</td>
+                    <td>1 akó = 40 pint</td>
+                    <td>58 liter</td>
+                </tr>
+                <tr>
+                    <td>butélia</b></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>6 deciliter</td>
+                </tr>
+                <tr>
+                    <td>csöbör</b></td>
+                    <td>cibrio<br>tina</td>
+                    <td>Zuber</td>
+                    <td>1 csöbör = 33, 36, 40, 50, 60 icce<br><i>(tájegységenként változik)</i></td>
+                    <td>5-200 liter</td>
+                </tr>
+                <tr>
+                    <td>dézsa</b></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>1 dézsa = 10-48 icce<br><i>(tájegységenként változik)</i></td>
+                    <td>8-38 liter</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;fertály</b></td>
+                    <td>quartale</td>
+                    <td>Viertel</td>
+                    <td>&nbsp;</td>
+                    <td>14 liter</td>
+                </tr>
+                <tr>
+                    <td>hordó</b></td>
+                    <td>tunella<br>vasa</td>
+                    <td>Fäss</td>
+                    <td>
+                        <p>1 gönci hordó = 240-420 icce<br>1 tokaji hordó = 160-180 icce</p>
+                    </td>
+                    <td>
+                        <p>200-452 liter<br>135-151 liter</p>
+                    </td>
+                </tr>
+                <tr>
+                    <td>icce</b></td>
+                    <td>justa<br>media</td>
+                    <td>Halbe</td>
+                    <td>&nbsp;1 icce = 2 meszely</td>
+                    <td>7-8 deciliter</td>
+                </tr>
+                <tr>
+                    <td>kanta</b></td>
+                    <td>canta</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>8 deciliter</td>
+                </tr>
+                <tr>
+                    <td>kila</b></td>
+                    <td>cila</td>
+                    <td>&nbsp;</td>
+                    <td>1 bácsi kila = 3 pozsonyi mérő</td>
+                    <td>140 kilogram (gabona)</td>
+                </tr>
+                <tr>
+                    <td>köböl</b></td>
+                    <td>cubulus</td>
+                    <td>Kübel</td>
+                    <td>&nbsp;</td>
+                    <td>10-25 liter (bor)<br>50-90 kilogramm (gabona)<br><i>(tájegységenként
+                            változik)</i></td>
+                </tr>
+                <tr>
+                    <td>kupa</b></td>
+                    <td>octal</td>
+                    <td>Achtel</td>
+                    <td>&nbsp;</td>
+                    <td>1,4 liter</td>
+                </tr>
+                <tr>
+                    <td>meszely</b></td>
+                    <td>sextarius<br>quartalia</td>
+                    <td>Seitel</td>
+                    <td>1 meszely = 2 römpöly</td>
+                    <td>3,5-4 deciliter</td>
+                </tr>
+                <tr>
+                    <td>mérő</b></td>
+                    <td>metreta</td>
+                    <td>Metz</td>
+                    <td>&nbsp;</td>
+                    <td>40 kilogramm (gabona)</td>
+                </tr>
+                <tr>
+                    <td>pint</b></td>
+                    <td>pinta</td>
+                    <td>Pinte<br>Achtring</td>
+                    <td>1 pint = 2 icce</td>
+                    <td>1,5 liter</td>
+                </tr>
+                <tr>
+                    <td>römpöly</b></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>Rimpel</td>
+                    <td>1,7-2 deciliter</td>
+                </tr>
+                <tr>
+                    <td>szapu</b></td>
+                    <td>scaphium</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>25-50 kilogramm (gabona)<br><i>(tájegységenként változik)</i></td>
+                </tr>
+                <tr>
+                    <td>véka</b></td>
+                    <td>canistrum<br>modius</td>
+                    <td>Vierdung</td>
+                    <td>&nbsp;</td>
+                    <td>15-25 kilogramm búza<br><i>(tájegységenként változik)</i></td>
+                </tr>
+                <tr>
+                    <td>vödör</b></td>
+                    <td>hydria</td>
+                    <td>Eimer</td>
+                    <td>&nbsp;</td>
+                    <td>10-15 liter</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>
